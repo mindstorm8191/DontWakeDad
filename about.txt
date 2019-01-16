@@ -1,0 +1,3 @@
+This is a simple little program I started writing on Christmas day. My nieces got a board game called Don't Wake Dad, where there's a button you press until Dad wakes up (yes, I had to play). The button seemed to be the item most likely to break, so why not make a script for it instead?
+
+Simply enter the number of times you have to press the button, and press go. Either the Dad sleeps through the noise, or wakes up and sends you back to bed.

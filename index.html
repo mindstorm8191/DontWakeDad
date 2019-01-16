@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      let counts = Math.floor(Math.random()*30);
+      let sleeps = ["Zzz...", "Zzz...", "Snooze...", "Snore...", "Sigh..."];
+      
+      function pickoutput() {
+        let col = document.getElementById("inputslot").value;
+        counts = counts-col;
+        if(counts < 0) {
+          document.getElementById("outputslot").innerHTML = "Go back to bed!";
+          counts = Math.floor(Math.random()*30);
+          return; 
+        }
+        document.getElementById("outputslot").innerHTML = sleeps[Math.floor(Math.random()*sleeps.length)];
+      }
+    </script>
+    <title>Don't Wake Dad</title>
+  </header>
+  <body>
+    Don't Wake Dad <br />
+    <div id="outputslot">Goodnight, kids</div>
+    Enter your press count:<br />
+    <input id="inputslot"> <br />
+    <button onclick="pickoutput();">Go </button>
+  </body>
+</html>
+ 
+ 
+ 
+ 
+ 
+          
